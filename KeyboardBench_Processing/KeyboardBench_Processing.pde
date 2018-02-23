@@ -29,25 +29,25 @@ void setup()
   port.write('L');
 
 
-    
+
   SendTrigger = new SendTrigger(this);
   timer = new Timer();
   timer.scheduleAtFixedRate(SendTrigger, 0, 300); // every 0.3 second
-  
+
   noLoop();
 }
 
 void onTrigger()
 {
   cnt++;
-  
-  if(cnt < 10)
+
+  if (cnt < 10)
     return;
-  
+
   // flush evertying in the serial buffer
-  while(port.available() > 0)
+  while (port.available() > 0)
     port.readChar();
-  
+
   // ping!
   port.write(c);
   pingTime = System.nanoTime();
@@ -55,7 +55,7 @@ void onTrigger()
 
 void serialEvent(Serial somePort) {
   char response = port.readChar();
-  if(response == 'r')
+  if (response == 'r')
   {
     pongTime = System.nanoTime();
   }
@@ -81,27 +81,47 @@ void draw()
   text("Measured "+(cnt-10), 10, 30);
 }
 
+void mousePressed()
+{
+  processPress();
+}
+
 void keyPressed()
+{
+  processPress();
+}
+
+void processPress()
 {
   long newTime = System.nanoTime();
 
   long RTT = newTime - pingTime;
   long RTT_serial = pongTime - pingTime;
   pressed = newTime;
-  
+
 
   double micro = (double)RTT / 1000000;  
   double micro_serial = (double)RTT_serial / 1000000;
-  
+
   //println(cnt);
   //println(key+"\tP\t"+micro);  
-  if(cnt > 10)
+  if (cnt > 10)
   {
     output.print(micro_serial+","+micro);
   }
 }
 
 void keyReleased()
+{
+  processRelease();
+}
+
+void mouseReleased()
+{
+  processRelease();
+}
+
+void processRelease()
 {
   long newTime = System.nanoTime();
 
@@ -112,7 +132,7 @@ void keyReleased()
   double microDur = (double)duration / 1000000;
 
   //println(key+"\tR\t"+microRTT+"\t"+microDur);
-  if(cnt > 10)
+  if (cnt > 10)
   {
     output.println(","+microRTT+","+microDur);
     output.flush();
@@ -157,6 +177,6 @@ class SendTrigger extends TimerTask {
 
   @Override
     public void run() {
-    invokeMethod(onTriggerEvent, null);
+    invokeMethod(onTriggerEvent);
   }
 }

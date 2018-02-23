@@ -3,8 +3,10 @@
 // Goal: response as soon as possible.
 // Attach LED to pin #16 and #14
 
-// mimimal boot HID keyboard implementation. Look   https://github.com/NicoHood/HID/wiki/Keyboard-API#boot-keyboard
-#include "HID-Project.h"
+// mimimal boot HID keyboard implementation. Look https://github.com/NicoHood/HID/wiki/Keyboard-API#boot-keyboard
+// Worked for HID-project 2.4.4.
+//#include "HID-Project.h"
+#include <Keyboard.h>
 
 #define LED 14 // PB3
 
@@ -22,46 +24,44 @@ void setup() {
   pinMode(LED, OUTPUT);
   digitalWrite(LED, LOW);
 
-  // Sends a clean report to the host. This is important on any Arduino type.
-  BootKeyboard.begin();
-  BootKeyboard.removeAll();
+  Keyboard.begin();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  if(Serial.available() > 0)
-  {     
+  if (Serial.available() > 0)
+  {
     // print as soon as possible.
     char ch = Serial.read();
-    
+
     // trigger a test keystroke
-    if(ch == 'r')
+    if (ch == 'r')
     {
-    
-      switch(mode)
+
+      switch (mode)
       {
         case LOOPBACK:
           Serial.print('r');
           Serial.flush();
+          delay(10);
+          Keyboard.press('a');
           delay(50);
-          BootKeyboard.add(KEY_A);
-          BootKeyboard.send();          
-          delay(50);
-          BootKeyboard.remove(KEY_A);
-          BootKeyboard.send();          
+          Keyboard.releaseAll();
           break;
         case LEDTEST:
           Serial.print('r');
+          Serial.flush();
+          delay(10);
           LED_ON;
           delay(50);
           LED_OFF;
-          break;   
+          break;
       }
       return;
     }
 
     // change the mode with a command 'L' or 'T'
-    switch(ch)
+    switch (ch)
     {
       case 'L':
         mode = LOOPBACK;
