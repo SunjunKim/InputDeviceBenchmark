@@ -2,58 +2,52 @@
 
 ## Measuring System
 ```
-C:\Users\AALTO GAMER LAB 2>systeminfo
+System Information report written at: 11/16/18 02:57:34
+System Name: DESKTOP-N7FFD3N
+[System Summary]
 
-Host Name:                 DESKTOP-N7FFD3N
-OS Name:                   Microsoft Windows 10 Pro
-OS Version:                10.0.17134 N/A Build 17134
-OS Manufacturer:           Microsoft Corporation
-OS Configuration:          Standalone Workstation
-OS Build Type:             Multiprocessor Free
-Registered Owner:          Windows User
-Registered Organization:
-Product ID:                00331-10000-00001-AA849
-Original Install Date:     11/14/2018, 6:51:00 AM
-System Boot Time:          11/16/2018, 1:46:24 AM
-System Manufacturer:       Micro-Star International Co., Ltd.
-System Model:              MS-7B48
-System Type:               x64-based PC
-Processor(s):              1 Processor(s) Installed.
-                           [01]: Intel64 Family 6 Model 158 Stepping 10 GenuineIntel ~3192 Mhz
-BIOS Version:              American Megatrends Inc. 2.60, 7/5/2018
-Windows Directory:         C:\WINDOWS
-System Directory:          C:\WINDOWS\system32
-Boot Device:               \Device\HarddiskVolume4
-System Locale:             en-us;English (United States)
-Input Locale:              en-us;English (United States)
-Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
-Total Physical Memory:     32,714 MB
-Available Physical Memory: 28,993 MB
-Virtual Memory: Max Size:  37,834 MB
-Virtual Memory: Available: 32,311 MB
-Virtual Memory: In Use:    5,523 MB
-Page File Location(s):     C:\pagefile.sys
-Domain:                    WORKGROUP
-Logon Server:              \\DESKTOP-N7FFD3N
-Hotfix(s):                 6 Hotfix(s) Installed.
-                           [01]: KB4100347
-                           [02]: KB4230204
-                           [03]: KB4457146
-                           [04]: KB4463318
-                           [05]: KB4467694
-                           [06]: KB4467702
-Network Card(s):           1 NIC(s) Installed.
-                           [01]: Realtek PCIe GBE Family Controller
-                                 Connection Name: Ethernet
-                                 DHCP Enabled:    Yes
-                                 DHCP Server:     130.233.253.8
-                                 IP address(es)
-                                 [01]: 193.167.0.99
-                                 [02]: fe80::905e:5808:8ffc:ec4e
-Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
-                           Virtualization Enabled In Firmware: Yes
-                           Second Level Address Translation: Yes
-                           Data Execution Prevention Available: Yes
+Item	Value	
+OS Name	Microsoft Windows 10 Pro	
+Version	10.0.17134 Build 17134	
+Other OS Description 	Not Available	
+OS Manufacturer	Microsoft Corporation	
+System Name	DESKTOP-N7FFD3N	
+System Manufacturer	Micro-Star International Co., Ltd.	
+System Model	MS-7B48	
+System Type	x64-based PC	
+System SKU	Default string	
+Processor	Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz, 3192 Mhz, 6 Core(s), 12 Logical Processor(s)	
+BIOS Version/Date	American Megatrends Inc. 2.60, 7/5/2018	
+SMBIOS Version	2.8	
+Embedded Controller Version	255.255	
+BIOS Mode	UEFI	
+BaseBoard Manufacturer	Micro-Star International Co., Ltd.	
+BaseBoard Model	Not Available	
+BaseBoard Name	Base Board	
+Platform Role	Desktop	
+Secure Boot State	Off	
+PCR7 Configuration	Binding Not Possible	
+Windows Directory	C:\WINDOWS	
+System Directory	C:\WINDOWS\system32	
+Boot Device	\Device\HarddiskVolume4	
+Locale	United States	
+Hardware Abstraction Layer	Version = "10.0.17134.285"	
+User Name	DESKTOP-N7FFD3N\AALTO GAMER LAB 2	
+Time Zone	Pacific Standard Time	
+Installed Physical Memory (RAM)	32.0 GB	
+Total Physical Memory	31.9 GB	
+Available Physical Memory	28.2 GB	
+Total Virtual Memory	36.9 GB	
+Available Virtual Memory	31.4 GB	
+Page File Space	5.00 GB	
+Page File	C:\pagefile.sys	
+Kernel DMA Protection	Off	
+Virtualization-based security	Not enabled	
+Device Encryption Support	Reasons for failed automatic device encryption: TPM is not usable, PCR7 binding is not supported, Hardware Security Test Interface failed and device is not InstantGo, Un-allowed DMA capable bus/device(s) detected, TPM is not usable	
+Hyper-V - VM Monitor Mode Extensions	Yes	
+Hyper-V - Second Level Address Translation Extensions	Yes	
+Hyper-V - Virtualization Enabled in Firmware	Yes	
+Hyper-V - Data Execution Protection	Yes	
 ```
 
 ## Log
