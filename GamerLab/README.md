@@ -2,6 +2,8 @@
 
 ## Measuring System
 ```
+C:\Users\AALTO GAMER LAB 2>systeminfo
+
 Host Name:                 DESKTOP-N7FFD3N
 OS Name:                   Microsoft Windows 10 Pro
 OS Version:                10.0.17134 N/A Build 17134
