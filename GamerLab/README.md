@@ -43,7 +43,6 @@ Page File Space	5.00 GB
 Page File	C:\pagefile.sys	
 Kernel DMA Protection	Off	
 Virtualization-based security	Not enabled	
-Device Encryption Support	Reasons for failed automatic device encryption: TPM is not usable, PCR7 binding is not supported, Hardware Security Test Interface failed and device is not InstantGo, Un-allowed DMA capable bus/device(s) detected, TPM is not usable	
 Hyper-V - VM Monitor Mode Extensions	Yes	
 Hyper-V - Second Level Address Translation Extensions	Yes	
 Hyper-V - Virtualization Enabled in Firmware	Yes	
@@ -51,5 +50,5 @@ Hyper-V - Data Execution Protection	Yes
 ```
 
 ## Log
-* 2018-11-16 / 
-* 2018-11-16 / Logitech G413 Carbon / Keyboard / Gamer / Model: Y-U0032 / Maunfactured: 2018
+* 2018-11-16 / Baseline             / Keyboard / Loopback / Model: Arduino Leonardo
+* 2018-11-16 / Logitech G413 Carbon / Keyboard / Gamer    / Model: Y-U0032 / Maunfactured: 2018
